@@ -1,15 +1,37 @@
-/* app.component.css */
 .container {
     display: flex;
+    height: 100vh;
   }
   
   .sidebar {
     width: 200px;
-    background-color: #f8f9fa;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #007bff;
   }
   
   .content {
     flex-grow: 1;
     padding: 16px;
+    overflow-y: auto;
   }
   
