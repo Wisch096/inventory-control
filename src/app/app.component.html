@@ -1,20 +1,38 @@
 <div class="container">
-    <div class="sidebar">
-        <h3>Algum nome</h3>
+  <div class="sidebar">
+      <h3><fa-icon [icon]="faLayerGroup" class="icon"></fa-icon>Sistema gerencial</h3>
       <ul>
           <li>
-            <a href="#">
-              <fa-icon [icon]="faChartSimple"></fa-icon>
-               Dashboard
+              <a [routerLink]="['/dashboard']">
+                  <fa-icon [icon]="faChartSimple" class="icon"></fa-icon>
+                   Dashboard
               </a>
           </li>
-          <li><a href="#">Produtos</a></li>
-          <li><a [routerLink]="['/stock-control']">Controle de Estoque</a></li>
+          <li>
+            <a href="#">
+              <fa-icon [icon]="faBox" class="icon">
+              </fa-icon>
+              Produtos
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/stock-control']">
+              <fa-icon [icon]="faDolly" class="icon">
+              </fa-icon>
+              Controle de Estoque
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/stock-control']">
+              <fa-icon [icon]="faMoneyBill" class="icon">
+              </fa-icon>
+              Controle de Vendas
+            </a>
+          </li>
       </ul>
-    </div>
-  
-    <div class="content">
-      <router-outlet></router-outlet>
-    </div>
   </div>
-  
+
+  <div class="content">
+      <router-outlet></router-outlet>
+  </div>
+</div>

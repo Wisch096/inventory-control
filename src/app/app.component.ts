@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
+import { faBox, faChartSimple, faLayerGroup, faDolly, faMoneyBill } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
     selector: 'app-root',
@@ -17,4 +17,8 @@ import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
 export class AppComponent {
   title = 'inventory-control';
   faChartSimple = faChartSimple;
+  faBox = faBox;
+  faLayerGroup = faLayerGroup;
+  faDolly = faDolly;
+  faMoneyBill = faMoneyBill;
 }
