@@ -1,11 +1,22 @@
 <body>
-    <header class="header">
-        <h1>Dashboard</h1>
-    </header>
+    <div>
+        <header class="header">
+            <h1>Dashboard</h1>
+        </header>
+    
+    </div>
     <main class="main-content">
         <section class="section">
-            <h2>Visão Geral</h2>
-            <p>Conteúdo da visão geral.</p>
+            <app-info-box 
+                [icon]="'fa fa-info'" 
+                [title]="'Informações Importantes'" 
+                [quantity]="42">
+            </app-info-box>
+            <app-info-box 
+                [icon]="'fa fa-info'" 
+                [title]="'Informações Importantes'" 
+                [quantity]="42">
+            </app-info-box>
         </section>
         <section class="section">
             <h2>Gráfico de Desempenho</h2>
