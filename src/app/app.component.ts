@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faAmbulance } from '@fortawesome/free-solid-svg-icons'
+import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
     selector: 'app-root',
@@ -16,5 +16,5 @@ import { faAmbulance } from '@fortawesome/free-solid-svg-icons'
 })
 export class AppComponent {
   title = 'inventory-control';
-  faAmbulance = faAmbulance;
+  faChartSimple = faChartSimple;
 }
